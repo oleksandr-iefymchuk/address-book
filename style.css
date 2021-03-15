@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 5px 9px 20px rgba(233, 18, 18, 0.15);
+}
+.logo {
+  margin-top: 30px;
+  padding-right: 50px;
+  padding-top: 20px;
+  text-align: right;
+}
+
+.logo img {
+  transition: 0.5s;
+  padding: 10px;
+  position: relative;
+  animation: header-dot 2s ease 1.5s 1 alternate both;
+}
+@keyframes header-dot {
+  0% {
+    left: -1500px;
+  }
+  100% {
+    left: 0;
+  }
+}
+.logo img:hover {
+  transform: scale(1.2);
+}
+
+.address-book {
+  padding-bottom: 30px;
+}
+.address-book-title {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.letter1 {
+  position: relative;
+  color: #d30202;
+  animation: letter-up 1s ease 0.5s 1 alternate both;
+}
+.letter2 {
+  position: relative;
+  color: #d30202;
+  animation: letter-up 1s ease 0.6s 1 alternate both;
+}
+.letter3 {
+  position: relative;
+  color: #d30202;
+  animation: letter-up 1s ease 0.7s 1 alternate both;
+}
+.letter4 {
+  position: relative;
+  color: #d30202;
+  animation: letter-up 1s ease 0.8s 1 alternate both;
+}
+.letter5 {
+  position: relative;
+  color: #d30202;
+  animation: letter-up 1s ease 0.9s 1 alternate both;
+}
+.letter6 {
+  position: relative;
+  color: #d30202;
+  animation: letter-up 1s ease 1s 1 alternate both;
+}
+.letter7 {
+  position: relative;
+  color: #d30202;
+  animation: letter-up 1s ease 1.1s 1 alternate both;
+}
+.letter8 {
+  position: relative;
+  color: #000070;
+  animation: letter-up 1s ease 1.2s 1 alternate both;
+}
+.letter9 {
+  position: relative;
+  color: #000070;
+  animation: letter-up 1s ease 1.3s 1 alternate both;
+}
+.letter10 {
+  position: relative;
+  color: #000070;
+  animation: letter-up 1s ease 1.4s 1 alternate both;
+}
+.letter11 {
+  position: relative;
+  color: #000070;
+  animation: letter-up 1s ease 1.5s 1 alternate both;
+}
+
+@keyframes letter-up {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 30px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+.search-form {
+  box-sizing: content-box;
+  margin: 5px 60px 5px auto;
+  width: 29%;
+  background: url("img/loupe.svg") no-repeat left/ 8%;
+}
+.search-text {
+  width: 90%;
+  margin-left: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.55);
+  border-radius: 0.3rem;
+}
+.search-text:focus {
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+table {
+  margin: 20px auto;
+  border: 2px solid #000;
+  width: 90%;
+  text-align: center;
+}
+th {
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  border: 1px solid #000;
+}
+td {
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.vertical-line {
+  margin-right: 5px;
+}
+.del,
+.edit {
+  margin-right: 5px;
+  cursor: pointer;
+  position: relative;
+  border: 2px solid #030000;
+  border-radius: 7px;
+  padding: 3px;
+  color: rgb(92, 94, 255);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgb(92, 94, 255) 50%);
+  background-position: 0;
+  background-size: 300% 100%;
+  transition: 0.7s;
+}
+
+.del:hover,
+.edit:hover {
+  background-position: 100%;
+  color: #000000;
+}
+input {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.inform {
+  width: 30%;
+}
+.button {
+  font-size: 1rem;
+  font-weight: 700;
+  width: 20%;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 40%;
+}
+
+th.sorted[data-order="-1"]::after {
+  content: "▼";
+}
+
+th.sorted[data-order="1"]::after {
+  content: "▲";
+}

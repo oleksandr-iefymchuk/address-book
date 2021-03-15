@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Address book</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--logotype-->
+      <section class="logo">
+        <img src="img/GfL.jpg" alt="" width="350" />
+      </section>
+      <!--address book-->
+      <section class="address-book">
+        <h1 class="address-book-title">
+          <span class="letter1">A</span><span class="letter2">d</span><span class="letter3">d</span><span class="letter4">r</span><span class="letter5">e</span><span class="letter6">s</span><span class="letter7">s</span> <span class="letter8">b</span><span class="letter9">o</span
+          ><span class="letter10">o</span><span class="letter11">k</span>
+        </h1>
+        <div class="search-form">
+          <input class="search-text" id="search-text" type="text" placeholder="Search" onkeyup="tableSearch()" />
+        </div>
+        <table class="address-book-table" id="address-book-table">
+          <thead>
+            <tr>
+              <th>Number</th>
+              <th>Phone</th>
+              <th>Full Name</th>
+              <th>Email</th>
+              <th>Address</th>
+              <th>Operation</th>
+            </tr>
+          </thead>
+          <tbody id="add-table">
+            <tr class="node-list">
+              <td class="cell">1</td>
+              <td class="cell">+38(066)-12-34-567</td>
+              <td class="cell">Alexey Ivanov</td>
+              <td class="cell">a.ivanov@geek.com</td>
+              <td class="cell">Kiev, Khreschatyk St, 20</td>
+              <td><span class="edit">Edit</span><span class="vertical-line">|</span><span class="del">Delete</span></td>
+            </tr>
+            <tr class="node-list">
+              <td class="cell">2</td>
+              <td class="cell">+38(099)-12-34-589</td>
+              <td class="cell">Igor Sidorov</td>
+              <td class="cell">i.sidorov@geek.com</td>
+              <td class="cell">NY, 5th Ave, 38</td>
+              <td><span class="edit">Edit</span><span class="vertical-line">|</span><span class="del">Delete</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <form id="panel">
+          <input class="inform" type="text" name="phone" id="input-phone" placeholder="Phone:" required />
+          <input class="inform" type="text" name="person" id="input-person" placeholder="Full Name:" required />
+          <input class="inform" type="text" name="email" id="input-email" placeholder="Email:" required />
+          <input class="inform" type="text" name="address" id="input-address" placeholder="Address:" required />
+          <button class="button" type="submit" value="">Add new record</button>
+        </form>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
